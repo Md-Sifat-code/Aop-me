@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7ab7394cb.js" crossorigin="anonymous"></script>
+    <!-- only for good icon purpose -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+    <title>Adop Me</title>
+</head>
+
+<body class="modal_er">
+    <dialog id="my_modal_1" class="modal">
+        <div id="dialog" class="modal-box">
+          <h1>hi</h1>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    <!-- navigation section -->
+    <section class="lato">
+        <div class="container mx-auto mt-7">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+
+                    <a class="flex flex-row items-center justify-center gap-2 text-2xl"><img src="./assets/logo.webp"
+                            alt="">Peddy</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class=" flex flex-row justify-between items-center gap-12">
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>Contract</li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn rounded-[42px] text-black font-bold bg-white border  border-stone-200"><i
+                            class="fa-regular fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- hero section -->
+    <section class="lato">
+        <div class="container mx-auto flex flex-col justify-center items-center mt-12">
+            <h4 class="text-2xl font-black text-stone-400">Bringing Families Together ❤️‍🔥 </h4>
+            <h1 class="text-2xl font-black md:text-5xl text-center mt-6">Your Path to Adoption<br> Starts here</h1>
+            <p class="text-center text-sm md:text-[16px] mt-6  text-black font-normal">"Welcome to Paws & Whiskers Pet
+                Adoption Shop, where we help you find your perfect furry <br>companion! Our mission is to connect loving
+                pets with caring families, offering a wide variety of<br> rescued animals ready to find their forever
+                home. Whether you're looking for a playful puppy, a<br> gentle cat, or any other small pet, we're here
+                to guide you through the adoption process with<br> compassion and care."</p>
+            <button onclick="scrollToBest()"
+                class="btn btn-ghost bg-[#0E7A81] text-white border-none rounded-[12px] px-8 text-[20px] hover:bg-[#3ea4ac] mt-6"><a
+                    href="#best">View
+                    More</a></button>
+            <img class="mt-6" src="./assets/pet.webp" alt="">
+        </div>
+    </section>
+    <!-- selection buttons sections -->
+    <section id="best">
+        <div class="container mx-auto mt-12">
+            <div class="flex flex-col items-center gap-6">
+                <h1 class="text-4xl font-black lato text-center">Adop Your Best Friend</h1>
+                <p class="text-sm font-normal text-stone-400 text-center">"Adopt your best friend today! Give a loving
+                    home to a rescue pet and <br>experience unconditional
+                    companionship and joy."</p>
+            </div>
+            <div id="buttons" class="flex flex-col md:flex-row justify-center items-center gap-12 mt-6">
+                <!-- <button
+                    class="btn  px-8  items-center justify-center text-xl border-[#0E7A81]  bg-white font-bold  "><img
+                        class="w-[30px] h-[30px]" src="./assets/shiba 1.png" alt="">Dogs</button>
+                <button
+                    class="btn  px-8 items-center justify-center text-xl border-[#0E7A81]  bg-white font-bold  "><img
+                        class="w-[30px] h-[30px]" src="./assets/cat 1.png" alt="">Cats</button>
+                <button
+                    class="btn  px-8 items-center justify-center text-xl border-[#0E7A81]  bg-white font-bold  "><img
+                        class="w-[30px] h-[30px]" src="./assets/rabbit 1.png" alt="">Rabbits</button>
+                <button
+                    class="btn  px-8 items-center justify-center text-xl border-[#0E7A81]  bg-white font-bold  "><img
+                        class="w-[30px] h-[30px]" src="./assets/parrot 1.png" alt="">Birds</button> -->
+            </div>
+        </div>
+    </section>
+    <!-- sorting section -->
+    <section>
+        <div class="container mx-auto flex flex-col mt-12 mb-12">
+            <div class="flex flex-row items-center p-4 sm:p-0">
+                <h1 class="flex-1 text-xl font-bold lato text-black">Best Deal For You</h1>
+                <button id="sorting" class="btn px-8 text-white font-medium bg-[#0E7A81]">Sort by Price</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 mt-8 p-4 sm:p-0 gap-3">
+                <!-- spinner part -->
+                <div class="h-[300px] w-full flex justify-center items-center" id="spinner" style="display: none;">
+                    <!-- Customize your spinner here -->
+                    <span class="loading loading-ball loading-xs text-accent"></span>
+                    <span class="loading loading-ball loading-sm text-accent"></span>
+                    <span class="loading loading-ball loading-md text-accent"></span>
+                    <span class="loading loading-ball loading-lg text-accent"></span>
+                </div>
+                <div id="cards"
+                    class="grid grid-cols-1 md:grid-cols-2 md:col-span-3 lg:grid-cols-3 lg:col-span-4 gap-6 ">
+
+
+
+                </div>
+                <div id="likes" class="grid grid-cols-2 w-full h-min  gap-6 p-4 border rounded-[18px] shadow-sm shadow-[#0E7A81]">
+                    <h1 class="flex items-center col-span-2 text-center font-bold text-xl"><img class="w-[50px] h-[50px]" src="./assets/heart.gif" alt="">Your Favourite Pets!!<img class="w-[50px] h-[50px]" src="./assets/heart.gif" alt=""></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <section class="bg-[#131313]">
+        <div class="container mx-auto bg-[#131313] ">
+            <footer class="footer text-neutral-content p-10">
+                <nav>
+                    <h6 class=""><a class="flex flex-row items-center justify-center gap-2 text-2xl"><img
+                                src="./assets/logo.webp" alt="">Peddy</a></h6>
+                    <a class="link link-hover">Location: av. Washington 165, NY CA</a>
+                    <a class="link link-hover">54003</a>
+                    <a class="link link-hover">Phone: +31 85 964 47 25</a>
+                    <a class="link link-hover">Email: info@yourdomain.com</a>
+                    <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+                    <div class="flex flex-row gap-6">
+                        <div class="icons8-facebook"></div>
+                        <img alt="svgImg"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxsaW5lYXJHcmFkaWVudCBpZD0iVThZZzBRNWd6cFJiUURCU25TQ2ZQYV95b1FhYlM4bDBxcHJfZ3IxIiB4MT0iNC4zMzgiIHgyPSIzOC45ODQiIHkxPSItMTAuMDU2IiB5Mj0iNDkuOTU0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNGI0YjRiIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuMjQ3IiBzdG9wLWNvbG9yPSIjM2UzZTNlIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuNjg2IiBzdG9wLWNvbG9yPSIjMmIyYjJiIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjUyNTI1Ij48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI1U4WWcwUTVnenBSYlFEQlNuU0NmUGFfeW9RYWJTOGwwcXByX2dyMSkiIGQ9Ik0zOCw0MkgxMGMtMi4yMDksMC00LTEuNzkxLTQtNFYxMGMwLTIuMjA5LDEuNzkxLTQsNC00aDI4YzIuMjA5LDAsNCwxLjc5MSw0LDR2MjgJQzQyLDQwLjIwOSw0MC4yMDksNDIsMzgsNDJ6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTM0LjI1NywzNGgtNi40MzdMMTMuODI5LDE0aDYuNDM3TDM0LjI1NywzNHogTTI4LjU4NywzMi4zMDRoMi41NjNMMTkuNDk5LDE1LjY5NmgtMi41NjMgTDI4LjU4NywzMi4zMDR6Ij48L3BhdGg+PHBvbHlnb24gZmlsbD0iI2ZmZiIgcG9pbnRzPSIxNS44NjYsMzQgMjMuMDY5LDI1LjY1NiAyMi4xMjcsMjQuNDA3IDEzLjgyMywzNCI+PC9wb2x5Z29uPjxwb2x5Z29uIGZpbGw9IiNmZmYiIHBvaW50cz0iMjQuNDUsMjEuNzIxIDI1LjM1NSwyMy4wMSAzMy4xMzYsMTQgMzEuMTM2LDE0Ij48L3BvbHlnb24+Cjwvc3ZnPg==" />
+                        <div class="icons8-youtube"></div>
+                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png"
+                            alt="instagram-new" />
+                    </div>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Useful Links</h6>
+                    <a class="link link-hover">Home</a>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Animals</a>
+                    <a class="link link-hover">Foundation</a>
+                    <a class="link link-hover">Contract</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Drop a Message</h6>
+                    <div class="flex flex-col gap-6 ">
+                        <input type="text" placeholder="Email"
+                            class="input input-bordered w-full max-w-2xl bg-stone-300 text-black" />
+                        <button
+                            class="btn btn-primary bg-[#0E7A81] px-8 hover:bg-[#0E7A81] text-white font-bold lato border-none">Subscribe</button>
+                    </div>
+
+                </nav>
+            </footer>
+        </div>
+    </section>
+    <!-- script part -->
+    <script src="./Scripts/main.js"></script>
+    <script src="./Scripts/like.js"></script>
+    <script src="./Scripts/details.js"></script>
+    <script src="./Scripts/adop.js"></script>
+    <script src="./Scripts/sorting.js"></script>
+</body>
+
+</html>
